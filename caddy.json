@@ -1,0 +1,34 @@
+{
+  "apps": {
+    "http": {
+      "servers": {
+        "test.com": {
+          "listen": [":3001"],
+          "routes": [
+            {
+              "handle": [
+                {
+                  "handler": "file_server",
+                  "root": "/Users/rumi/Code/pagebulb-works/sites"
+                }
+              ]
+            }
+          ]
+        },
+        "test1.com": {
+          "listen": [":3003"],
+          "routes": [
+            {
+              "handle": [
+                {
+                  "handler": "file_server",
+                  "root": "/Users/rumi/Code/pagebulb-works/sites"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
